@@ -114,20 +114,20 @@ function AlumniDetails() {
           </div>
 
           {/* About Section */}
-          <div className="li-card">
+          <div className="li-card" style={{ padding: "24px" }}>
             <h2 style={{ fontSize: "20px", fontWeight: "600", marginBottom: "16px" }}>About</h2>
             {user.bio ? (
-              <p className="about-text" style={{ color: "var(--text-muted)", fontSize: "15px", lineHeight: "1.6" }}>{user.bio}</p>
+              <p className="about-text" style={{ color: "var(--text-muted)", fontSize: "15px", lineHeight: "1.6", padding: 0 }}>{user.bio}</p>
             ) : (
-              <p className="empty-text" style={{ color: "var(--text-light)" }}>No summary provided.</p>
+              <p className="empty-text" style={{ color: "var(--text-light)", padding: 0 }}>No summary provided.</p>
             )}
           </div>
 
           {/* Experience Section */}
-          <div className="li-card">
+          <div className="li-card" style={{ padding: "24px" }}>
             <h2 style={{ fontSize: "20px", fontWeight: "600", marginBottom: "16px" }}>Experience</h2>
             {Array.isArray(user.experience) && user.experience.length > 0 ? (
-              <div className="li-timeline">
+              <div className="li-timeline" style={{ padding: 0 }}>
                 {user.experience.map((exp, idx) => (
                   <div className="timeline-item" key={idx} style={{ display: "flex", gap: "16px", marginBottom: "20px" }}>
                     <div className="timeline-logo" style={{ width: "48px", height: "48px", borderRadius: "8px", backgroundColor: "var(--bg-hover)", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--text-muted)" }}>
@@ -143,14 +143,14 @@ function AlumniDetails() {
                 ))}
               </div>
             ) : (
-              <p className="empty-text" style={{ color: "var(--text-light)" }}>No experience added.</p>
+              <p className="empty-text" style={{ color: "var(--text-light)", padding: 0 }}>No experience added.</p>
             )}
           </div>
 
           {/* Education Section */}
-          <div className="li-card">
+          <div className="li-card" style={{ padding: "24px" }}>
             <h2 style={{ fontSize: "20px", fontWeight: "600", marginBottom: "16px" }}>Education</h2>
-            <div className="li-timeline">
+            <div className="li-timeline" style={{ padding: 0 }}>
               <div className="timeline-item" style={{ display: "flex", gap: "16px" }}>
                 <div className="timeline-logo" style={{ width: "48px", height: "48px", borderRadius: "8px", backgroundColor: "var(--bg-hover)", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--text-muted)" }}>
                   <Book size={24} />
@@ -165,10 +165,10 @@ function AlumniDetails() {
           </div>
 
           {/* Projects Section */}
-          <div className="li-card">
+          <div className="li-card" style={{ padding: "24px" }}>
             <h2 style={{ fontSize: "20px", fontWeight: "600", marginBottom: "16px" }}>Projects</h2>
             {Array.isArray(user.projects) && user.projects.length > 0 ? (
-              <div className="project-list" style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <div className="project-list" style={{ display: "flex", flexDirection: "column", gap: "16px", padding: 0 }}>
                 {user.projects.map((proj, idx) => (
                   <div className="project-item" key={idx} style={{ padding: "16px", borderRadius: "var(--radius-md)", border: "1px solid var(--border-light)" }}>
                     <h3 style={{ fontSize: "16px", fontWeight: "600" }}>{proj.projectName}</h3>
@@ -187,15 +187,15 @@ function AlumniDetails() {
                 ))}
               </div>
             ) : (
-              <p className="empty-text" style={{ color: "var(--text-light)" }}>No projects added.</p>
+              <p className="empty-text" style={{ color: "var(--text-light)", padding: 0 }}>No projects added.</p>
             )}
           </div>
 
           {/* Achievements Section */}
-          <div className="li-card">
+          <div className="li-card" style={{ padding: "24px" }}>
             <h2 style={{ fontSize: "20px", fontWeight: "600", marginBottom: "16px" }}>Honors & Awards</h2>
             {Array.isArray(user.achievements) && user.achievements.length > 0 ? (
-              <div className="li-timeline">
+              <div className="li-timeline" style={{ padding: 0 }}>
                 {user.achievements.map((ach, idx) => (
                   <div className="timeline-item" key={idx} style={{ display: "flex", gap: "16px", marginBottom: "16px" }}>
                     <div className="timeline-logo" style={{ width: "48px", height: "48px", borderRadius: "8px", backgroundColor: "var(--bg-hover)", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--text-muted)" }}>
@@ -209,23 +209,23 @@ function AlumniDetails() {
                 ))}
               </div>
             ) : (
-              <p className="empty-text" style={{ color: "var(--text-light)" }}>No honors or awards added.</p>
+              <p className="empty-text" style={{ color: "var(--text-light)", padding: 0 }}>No honors or awards added.</p>
             )}
           </div>
 
           {/* Skills Section */}
-          <div className="li-card">
+          <div className="li-card" style={{ padding: "24px" }}>
             <h2 style={{ fontSize: "20px", fontWeight: "600", marginBottom: "16px" }}>Skills</h2>
             {Array.isArray(user.skills) && user.skills.length > 0 ? (
-              <div className="li-skills-grid" style={{ display: "flex", flexWrap: "wrap", gap: "8px" }}>
+              <div className="li-skills-grid" style={{ display: "flex", flexWrap: "wrap", gap: "8px", padding: 0 }}>
                 {user.skills.map((skill, idx) => (
-                  <div className="li-skill-badge" key={idx} style={{ padding: "8px 16px", backgroundColor: "var(--bg-hover)", borderRadius: "20px", fontSize: "14px", fontWeight: "500", color: "var(--text-dark)" }}>
+                  <div className="li-skill-badge" key={idx} style={{ padding: "8px 16px", backgroundColor: "var(--bg-hover)", borderRadius: "20px", fontSize: "14px", fontWeight: "500", color: "var(--text-dark)", border: "none" }}>
                     {skill}
                   </div>
                 ))}
               </div>
             ) : (
-              <p className="empty-text" style={{ color: "var(--text-light)" }}>No skills listed.</p>
+              <p className="empty-text" style={{ color: "var(--text-light)", padding: 0 }}>No skills listed.</p>
             )}
           </div>
 
@@ -234,9 +234,9 @@ function AlumniDetails() {
         {/* SIDE COLUMN */}
         <div className="li-side-column">
           {/* Contact Details Card */}
-          <div className="li-card">
+          <div className="li-card" style={{ padding: "24px" }}>
             <h3 style={{ fontSize: "16px", fontWeight: "600", marginBottom: "16px" }}>Contact Details</h3>
-            <div className="social-links-area" style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+            <div className="social-links-area" style={{ display: "flex", flexDirection: "column", gap: "12px", padding: 0 }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "14px", color: "var(--text-muted)" }}>
                 <Mail size={18} />
                 <span>{user.email}</span>
@@ -248,19 +248,19 @@ function AlumniDetails() {
                 </div>
               )}
               {user.linkedin && (
-                <a href={user.linkedin} target="_blank" rel="noreferrer" style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "14px", color: "var(--accent)", fontWeight: "600" }}>
+                <a href={user.linkedin} target="_blank" rel="noreferrer" style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "14px", color: "var(--accent)", fontWeight: "600", textDecoration: "none" }}>
                   <Linkedin size={18} />
                   <span>LinkedIn Profile</span>
                 </a>
               )}
               {user.github && (
-                <a href={user.github} target="_blank" rel="noreferrer" style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "14px", color: "var(--text-dark)", fontWeight: "600" }}>
+                <a href={user.github} target="_blank" rel="noreferrer" style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "14px", color: "var(--text-dark)", fontWeight: "600", textDecoration: "none" }}>
                   <Github size={18} />
                   <span>GitHub Profile</span>
                 </a>
               )}
               {user.portfolio && (
-                <a href={user.portfolio} target="_blank" rel="noreferrer" style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "14px", color: "var(--text-dark)", fontWeight: "600" }}>
+                <a href={user.portfolio} target="_blank" rel="noreferrer" style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "14px", color: "var(--text-dark)", fontWeight: "600", textDecoration: "none" }}>
                   <Globe size={18} />
                   <span>Personal Portfolio</span>
                 </a>
