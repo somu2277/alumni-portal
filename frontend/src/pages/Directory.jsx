@@ -253,7 +253,7 @@ function Directory() {
               <button 
                 disabled={page === 1} 
                 onClick={() => setPage(page - 1)}
-                style={{ display: "flex", alignItems: "center", gap: "4px", padding: "8px 16px", borderRadius: "var(--radius-md)", border: "1px solid var(--border-strong)", backgroundColor: page === 1 ? "var(--bg-hover)" : "var(--bg-card)", cursor: page === 1 ? "not-allowed" : "pointer", opacity: page === 1 ? 0.5 : 1 }}
+                style={{ display: "flex", alignItems: "center", gap: "4px", padding: "8px 16px", borderRadius: "var(--radius-md)", border: "1px solid var(--border-strong)", backgroundColor: page === 1 ? "var(--bg-hover)" : "var(--bg-card)", color: "var(--text-dark)", cursor: page === 1 ? "not-allowed" : "pointer", opacity: page === 1 ? 0.5 : 1 }}
               >
                 <ChevronLeft size={16} /> Prev
               </button>
@@ -261,7 +261,7 @@ function Directory() {
               <button 
                 disabled={page === totalPages} 
                 onClick={() => setPage(page + 1)}
-                style={{ display: "flex", alignItems: "center", gap: "4px", padding: "8px 16px", borderRadius: "var(--radius-md)", border: "1px solid var(--border-strong)", backgroundColor: page === totalPages ? "var(--bg-hover)" : "var(--bg-card)", cursor: page === totalPages ? "not-allowed" : "pointer", opacity: page === totalPages ? 0.5 : 1 }}
+                style={{ display: "flex", alignItems: "center", gap: "4px", padding: "8px 16px", borderRadius: "var(--radius-md)", border: "1px solid var(--border-strong)", backgroundColor: page === totalPages ? "var(--bg-hover)" : "var(--bg-card)", color: "var(--text-dark)", cursor: page === totalPages ? "not-allowed" : "pointer", opacity: page === totalPages ? 0.5 : 1 }}
               >
                 Next <ChevronRight size={16} />
               </button>
