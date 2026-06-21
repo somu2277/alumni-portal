@@ -11,7 +11,7 @@ import Events from "./pages/Events";
 import Jobs from "./pages/Jobs";
 import AlumniDetails from "./pages/AlumniDetails";
 
-import Notifications from "./pages/Notifications";
+
 import Settings from "./pages/Settings";
 import AdminPanel from "./pages/AdminPanel";
 import Layout from "./components/Layout";
@@ -54,10 +54,7 @@ function App() {
           element={<ProtectedRoute><Layout><Jobs /></Layout></ProtectedRoute>} 
         />
 
-        <Route 
-          path="/notifications" 
-          element={<ProtectedRoute><Layout><Notifications /></Layout></ProtectedRoute>} 
-        />
+
         <Route 
           path="/settings" 
           element={<ProtectedRoute><Layout><Settings /></Layout></ProtectedRoute>} 

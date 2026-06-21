@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { LayoutDashboard, Users, Calendar, Briefcase, User, Settings, LogOut, MessageSquare, Bell, ShieldCheck } from 'lucide-react';
+import { LayoutDashboard, Users, Calendar, Briefcase, User, Settings, LogOut, MessageSquare, ShieldCheck } from 'lucide-react';
 import { motion } from 'framer-motion';
 import './Sidebar.css';
 
@@ -17,7 +17,7 @@ const Sidebar = () => {
   const navItems = [
     { name: 'Dashboard', path: '/dashboard', icon: <LayoutDashboard size={20} /> },
     { name: 'Directory', path: '/directory', icon: <Users size={20} /> },
-    { name: 'Notifications', path: '/notifications', icon: <Bell size={20} /> },
+
     { name: 'Events', path: '/events', icon: <Calendar size={20} /> },
     { name: 'Jobs', path: '/jobs', icon: <Briefcase size={20} /> },
     { name: 'Profile', path: '/profile', icon: <User size={20} /> },
