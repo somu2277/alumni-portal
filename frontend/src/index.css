@@ -2,11 +2,11 @@
 
 :root {
   /* Premium SaaS Color Palette */
-  --primary: #1E3A8A; /* Navy Blue */
-  --primary-hover: #1E40AF;
-  --primary-light: #EFF6FF;
+  --primary: #F97316; /* Orange */
+  --primary-hover: #EA580C;
+  --primary-light: #FFF7ED;
   
-  --accent: #3B82F6; /* Bright Blue for accents/gradients */
+  --accent: #F59E0B; /* Amber */
   
   --bg-main: #F8FAFC; /* Very light cool gray */
   --bg-card: #FFFFFF;
