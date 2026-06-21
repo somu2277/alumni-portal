@@ -80,7 +80,7 @@ exports.updateJob = async (req, res) => {
 // Apply Job
 exports.applyJob = async (req, res) => {
   try {
-    const { resumeUrl = "Not provided", coverLetter } = req.body;
+    const { resumeUrl = "Not provided", coverLetter } = req.body || {};
 
     const JobApplication = require("../Db/jobApplicationSchema");
     const Alumni = require("../Db/userSchema");
