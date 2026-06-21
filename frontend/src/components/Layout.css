@@ -32,3 +32,8 @@
     padding: 24px;
   }
 }
+
+@media (max-width: 768px) {
+  .main-wrapper { margin-left: 0; margin-bottom: 70px; }
+  .main-content { padding: 16px; }
+}

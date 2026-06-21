@@ -144,3 +144,8 @@
 .linkedin-btn:hover {
   background: #f3f4f6;
 }
+@media (max-width: 768px) {
+  .directory-grid { grid-template-columns: 1fr; }
+  .directory-toolbar { flex-direction: column; }
+  .directory-toolbar input, .directory-toolbar select { width: 100%; }
+}
