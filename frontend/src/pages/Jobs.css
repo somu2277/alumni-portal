@@ -1,0 +1,274 @@
+.jobs-page {
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* HEADER */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-job-btn {
+  background: #2563eb;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* TOOLBAR */
+.jobs-toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f1f5f9;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.filter-btn {
+  background: #1d4ed8;
+  color: white;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* FILTER PANEL */
+.filter-panel {
+  margin-top: 10px;
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.clear-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* JOBS */
+.jobs-grid {
+  margin-top: 20px;
+  display: grid;
+  gap: 15px;
+}
+
+.job-card {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.job-header {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.company-logo {
+  width: 40px;
+  height: 40px;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.job-details {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.job-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+/* APPLY BUTTON */
+.apply-btn {
+  background: #2563eb;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+}
+
+.apply-btn:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-form input,
+.modal-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.form-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+}
+
+.form-actions button:first-child {
+  background: gray;
+  color: white;
+}
+
+.form-actions button:last-child {
+  background: #2563eb;
+  color: white;
+}
+
+.applied-section {
+  margin-top: 40px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.applied-section h2 {
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: #1e293b;
+}
+
+/* GRID IMPROVEMENT */
+.applied-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+/* CARD ENHANCEMENT */
+.applied-card {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  transition: 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* HOVER EFFECT */
+.applied-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  border-color: #c7d2fe;
+}
+
+/* ROLE */
+.applied-card h3 {
+  font-size: 16px;
+  color: #2563eb;
+  margin-bottom: 6px;
+}
+
+/* COMPANY */
+.applied-card p {
+  font-size: 14px;
+  color: #334155;
+  margin-bottom: 6px;
+}
+
+/* LOCATION TAG */
+.applied-card span {
+  font-size: 12px;
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 4px 8px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+/* LEFT BLUE ACCENT BAR */
+.applied-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #2563eb;
+  border-radius: 10px 0 0 10px;
+}
+
+/* EMPTY STATE */
+.empty-applied {
+  color: #64748b;
+  font-style: italic;
+}
