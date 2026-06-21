@@ -4,6 +4,7 @@ const cors = require("cors");
 const express = require("express");
 const helmet = require("helmet");
 const rateLimit = require("express-rate-limit");
+const path = require("path");
 
 const connectDB = require("./models/connect");
 
@@ -91,6 +92,14 @@ app.use(
   alumniRoutes
 );
 app.use("/api/profile", profileRoutes);
+
+// Serve frontend in production
+app.use(express.static(path.join(__dirname, "../frontend/dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
+});
+
 app.listen(5000, () => {
   console.log(
     "Server running on port 5000"
