@@ -723,21 +723,42 @@ header{
   flex-direction: column;
   justify-content: center;
 }
+.register-page {
+  height: 650px;
+}
+
 .register-image{
   width: 450px;
-  height: 620px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0,0,0,.15);
+  border-radius: 15px 0 0 15px;
+  display: block;
+  box-shadow: -5px 10px 25px rgba(0,0,0,.1);
 }
 
 .register-card {
-  width: 420px;
+  width: 450px;
+  height: 600px;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--bg-card);
+  box-shadow: 10px 10px 25px rgba(0,0,0,.1);
 }
+
 .register-form-card{
   width: 450px;
+  height: 650px;
   background: var(--bg-card);
   padding: 35px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  border-radius: 0 15px 15px 0;
+  box-shadow: 10px 10px 25px rgba(0,0,0,.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .register-page { display: none; }
+  .register-form-card { border-radius: 20px; width: 100%; height: auto; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,.15); }
 }
