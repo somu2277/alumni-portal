@@ -30,7 +30,7 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
-        <div className="logo-icon">A</div>
+        <img src="/favicon.svg" alt="Logo" className="logo-icon" style={{ width: '36px', height: '36px', background: 'transparent', border: 'none', borderRadius: '0' }} />
         <h2>Alumni Portal</h2>
       </div>
 

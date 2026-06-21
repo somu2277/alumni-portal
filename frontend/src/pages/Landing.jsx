@@ -75,7 +75,7 @@ function Landing() {
         <div className="header-container">
           <div className="header-left">
             <div className="logo-box">
-              <Network size={28} className="text-indigo" />
+              <img src="/favicon.svg" alt="Logo" style={{ width: '28px', height: '28px', marginRight: '10px' }} />
               <span className="logo-text">AlumniHub</span>
             </div>
           </div>
