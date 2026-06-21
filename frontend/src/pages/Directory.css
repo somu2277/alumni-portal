@@ -34,13 +34,13 @@
 
 .alumni-profile-card:hover {
   transform: translateY(-6px);
-  border-color: #2563eb;
+  border-color: var(--primary);
   box-shadow: 0 12px 28px rgba(37, 99, 235, 0.15);
 }
 
 .card-cover-photo {
   height: 90px;
-  background: linear-gradient(135deg, #1E3A8A, #3B82F6);
+  background: linear-gradient(135deg, var(--primary-hover), var(--primary));
 }
 
 .card-avatar {
@@ -49,7 +49,7 @@
   border-radius: 50%;
   background: var(--bg-card);
   border: 4px solid #ffffff;
-  color: #1e3a8a;
+  color: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,7 +117,7 @@
 
 .connect-btn {
   flex: 1;
-  background: #2563eb;
+  background: var(--primary);
   color: white;
   border: none;
   padding: 10px 0;
@@ -128,7 +128,7 @@
 }
 
 .connect-btn:hover {
-  background: #1d4ed8;
+  background: var(--primary-hover);
 }
 
 .linkedin-btn {
